@@ -1,1 +1,4 @@
-hello i am vinod
+class Test 
+{
+system.out.println("welcome")
+}
