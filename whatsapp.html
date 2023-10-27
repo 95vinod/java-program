@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .screen {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            overflow: auto;
+            border-radius: 20px;
+            
+
+        }
+
+        .box {
+            
+            width: 30%;
+            height: 80%; 
+            background-color: rgb(212, 237, 212);
+            overflow: auto;
+            
+        
+            
+        }
+            
+            
+           
+            
+           
+
+
+
+
+        input {
+            padding: 10px;
+            /* margin-top: 360px; */
+        }
+
+        button {
+            padding: 10px;
+            background-color: rgb(105, 205, 105);
+            /* margin-left: 177px; */
+
+        }
+        .ss{
+            background-color: rgb(212, 237, 212);
+
+            height: 300px;
+
+            /* border: 2px solid black; */
+        }
+        
+       p{
+        margin: 0;
+       }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="screen">
+            <div>
+                <div class="ss">
+                    <div class="box" style="text-align: left;"></div>
+                </div>
+                <input type="text"><button onclick="left()">Send</button>
+            </div>
+
+            <div>
+                <div class="ss">
+                    <div class="box" style="text-align: right;     padding-top: 23px;"></div>
+                </div>
+                <input type="text"><button onclick="right()">Send</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function left() {
+            var txt = document.getElementsByTagName('input')[0].value
+            var box1 = document.getElementsByClassName('box')[0]
+            var tag = document.createElement('p')
+            var tag_txt = document.createTextNode(txt)
+            tag.appendChild(tag_txt)
+            box1.appendChild(tag)
+
+            var txt2 = document.getElementsByTagName('input')[0]
+            txt2.value = " "
+
+
+        }
+
+        function right() {
+            var txt = document.getElementsByTagName('input')[1].value
+            var box1 = document.getElementsByClassName('box')[1]
+            var tag = document.createElement('p')
+            var tag_txt = document.createTextNode(txt)
+            tag.appendChild(tag_txt)
+            box1.appendChild(tag)
+
+            var txt2 = document.getElementsByTagName('input')[1]
+            txt2.value = " "
+
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

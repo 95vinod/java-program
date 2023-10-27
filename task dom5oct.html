@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gain{
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+            text-align: center;
+            
+        }
+        .com{
+            display: flex;
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        section{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <div class="gain">
+        <input type="text" placeholder="tag"><br><br>
+        <input type="text" placeholder="attribute"><br><br>
+        <button onclick=" create()">click</button>
+        <p></p>
+        <p></p>
+        <div class="com">
+            <div class="main">
+    
+            </div>
+    </div>
+    
+
+    </div>
+</section>
+    <script>
+        function create()
+        {
+            var tag =document.getElementsByTagName('input')[0].value
+            var attribute =document.getElementsByTagName('input')[1].value
+            document.getElementsByTagName('p')[0].innerText=tag
+            document.getElementsByTagName('p')[1].innerText=attribute
+            console.log(input)
+
+        }
+        
+    </script>
+</body>
+</html>
